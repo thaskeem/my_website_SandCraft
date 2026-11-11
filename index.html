@@ -1,0 +1,2495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Professional construction company delivering high-quality residential, commercial, and industrial projects with excellence."
+  />
+  <title>SandCraft Interiors and Builders</title>
+
+  <!-- Favicon (tab icon) -->
+  <link rel="icon" type="image/jpeg" href="IMG_5182.jpg">
+  <!-- Optional extra for better compatibility -->
+  <link rel="shortcut icon" href="IMG_5182.jpg" type="image/jpeg">
+
+
+
+  <!-- Google Fonts -->
+   
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />-->
+
+  <!-- Font Awesome (Icons for WhatsApp, Email, etc.) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    :root {
+      --primary: #0b2545;      /* navy */
+      --primary-dark: #08172b;
+      --accent: #f4a51c;       /* gold/orange */
+      --text: #111111;
+      --muted: #6b7280;
+      --bg-light: #f5f5f7;
+      --white: #ffffff;
+      --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.16);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --transition-fast: 0.2s ease-out;
+      --transition-med: 0.35s ease;
+      --header-height: 78px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      color: var(--text);
+      background-color: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Layout Utilities */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 1.5rem;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 3.5rem 0;
+      }
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-kicker {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 2.3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0.5rem auto 0;
+      font-size: 0.98rem;
+    }
+
+    /* Header / Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(8, 23, 43, 0.88);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+      transition: background var(--transition-med), box-shadow var(--transition-med),
+        transform 0.25s ease-out;
+    }
+
+    header.header--scrolled {
+      background: rgba(8, 23, 43, 0.96);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.4);
+    }
+
+    .nav {
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #e5e7eb;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+
+    /*.nav-logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 30%;
+      background: radial-gradient(circle at 20% 20%, #facc15, var(--accent));
+      display: grid;
+      place-items: center;
+      color: var(--primary-dark);
+      font-weight: 800;
+      box-shadow: 0 8px 26px rgba(234, 179, 8, 0.45);
+      font-size: 0.85rem;
+    } */
+
+
+
+    .nav-logo-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 30%;
+    overflow: hidden; /* so the image follows the rounded shape */
+    background: radial-gradient(circle at 20% 20%, #facc15, var(--accent));
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 26px rgba(234, 179, 8, 0.45);
+    }
+
+/* logo image styling */
+    .nav-logo-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* use 'cover' if you want it to fully fill the shape */
+    }
+
+
+
+
+
+
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      font-size: 0.94rem;
+      color: #cbd5f5;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.2rem;
+      transition: color var(--transition-fast);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #f97316, #facc15);
+      border-radius: 999px;
+      transition: width var(--transition-med);
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      font-size: 1.1rem;
+      color: #e5e7eb;
+    }
+
+    .nav-cta a.icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      display: grid;
+      place-items: center;
+      background: rgba(15, 23, 42, 0.6);
+      transition: all var(--transition-fast);
+    }
+
+    .nav-cta a.icon-btn:hover {
+      border-color: #f97316;
+      background: linear-gradient(135deg, #f97316, #facc15);
+      color: #111827;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 22px rgba(249, 115, 22, 0.55);
+    }
+
+    .nav-cta .primary-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.2rem;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(120deg, #f97316, #facc15);
+      color: #111827;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 14px 35px rgba(249, 115, 22, 0.6);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .nav-cta .primary-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 22px 45px rgba(249, 115, 22, 0.7);
+    }
+
+    .nav-cta .primary-btn i {
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Nav */
+    .nav-toggle {
+      display: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: #e5e7eb;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .nav-toggle:hover {
+      border-color: #f97316;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+      .nav-toggle {
+        display: flex;
+      }
+
+      .nav-mobile {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background: rgba(8, 23, 43, 0.97);
+        backdrop-filter: blur(20px);
+        padding: 1.25rem 1.5rem 1.75rem;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        transform: translateY(-16px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--transition-med), transform var(--transition-med);
+      }
+
+      .nav-mobile.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .nav-mobile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .nav-mobile-links a {
+        color: #e5e7eb;
+        font-size: 0.94rem;
+      }
+
+      .nav-mobile-links a span {
+        font-size: 0.76rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: #9ca3af;
+        display: inline-block;
+        margin-right: 0.6rem;
+      }
+
+      .nav-mobile-cta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .nav-mobile-cta-icons {
+        display: flex;
+        gap: 0.75rem;
+        font-size: 1.2rem;
+        color: #e5e7eb;
+      }
+
+      .nav-mobile-cta-icons a {
+        width: 36px;
+        height: 36px;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.6);
+        display: grid;
+        place-items: center;
+        background: rgba(15, 23, 42, 0.8);
+        transition: all var(--transition-fast);
+      }
+
+      .nav-mobile-cta-icons a:hover {
+        border-color: #f97316;
+        color: #facc15;
+      }
+
+      .nav-mobile-cta .primary-btn {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+        padding: 0.7rem 0.9rem;
+        font-size: 0.78rem;
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      padding-top: calc(var(--header-height) + 3.5rem);
+      padding-bottom: 4.5rem;
+      display: flex;
+      align-items: center;
+      color: #f9fafb;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(8, 47, 73, 0.9)),
+        url("https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=1600")
+          center/cover no-repeat fixed;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 10% 10%, rgba(248, 250, 252, 0.12), transparent 55%),
+        radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.2), transparent 60%);
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: 2.8rem;
+      align-items: center;
+      z-index: 1;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        padding-top: calc(var(--header-height) + 1.4rem);
+        padding-bottom: 3.5rem;
+        text-align: center;
+      }
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.3rem;
+      }
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.2rem 0.9rem 0.2rem 0.2rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(249, 250, 251, 0.12);
+      margin-bottom: 1rem;
+      font-size: 0.78rem;
+    }
+/******************************************************************************/
+    /*.hero-kicker-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      /*background: linear-gradient(135deg, #f97316, #facc15);
+      display: grid;
+      place-items: center;
+      color: #111827;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 24px rgba(249, 115, 22, 0.7);
+    }*/
+
+
+      .hero-kicker-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 30%;
+    overflow: hidden; 
+    background: radial-gradient(circle at 20% 20%, #facc15, var(--accent));
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 26px rgba(234, 179, 8, 0.45);
+    }
+ 
+      
+    
+    nav-logo-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+/**************************************************************/
+    .hero-kicker span {
+      opacity: 0.9;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 3.6vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title span {
+        background: linear-gradient(120deg, #facc15, #f97316);
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      max-width: 34rem;
+      color: #d1d5db;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-bottom: 2.1rem;
+      font-size: 0.86rem;
+      color: #e5e7eb;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .hero-meta-item i {
+      color: #facc15;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.6rem;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(120deg, #f97316, #facc15);
+      color: #111827;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 18px 40px rgba(249, 115, 22, 0.75);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 22px 52px rgba(249, 115, 22, 0.9);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.88rem 1.35rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(209, 213, 219, 0.7);
+      color: #e5e7eb;
+      font-size: 0.86rem;
+      cursor: pointer;
+      background: rgba(15, 23, 42, 0.7);
+      transition: all var(--transition-fast);
+    }
+
+    .btn-outline i {
+      color: #22c55e;
+      font-size: 1.1rem;
+    }
+
+    .btn-outline:hover {
+      border-color: #f97316;
+      color: #facc15;
+      background: rgba(15, 23, 42, 0.95);
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    .hero-trust-logos {
+      display: flex;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-logo-pill {
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      font-size: 0.75rem;
+    }
+
+    .hero-badge {
+      position: relative;
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem 1.2rem 1.1rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: var(--shadow-soft);
+      max-width: 360px;
+      margin-left: auto;
+      backdrop-filter: blur(28px);
+    }
+
+    @media (max-width: 900px) {
+      .hero-subtitle,
+      .hero-meta,
+      .hero-trust {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-subtitle {
+        max-width: 26rem;
+      }
+      .hero-badge {
+        margin: 0 auto;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .hero-trust {
+        justify-content: center;
+        text-align: left;
+      }
+    }
+
+    .hero-badge-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-badge-title h3 {
+      font-size: 0.95rem;
+      color: #e5e7eb;
+    }
+
+    .hero-badge-chip {
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(22, 163, 74, 0.12);
+      color: #bbf7d0;
+      font-size: 0.72rem;
+    }
+
+    .hero-badge-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      color: #d1d5db;
+    }
+
+    .hero-badge-item span {
+      display: block;
+      font-size: 0.74rem;
+      color: #9ca3af;
+      margin-bottom: 0.1rem;
+    }
+
+    .hero-badge-footnote {
+      margin-top: 0.8rem;
+      font-size: 0.7rem;
+      color: #9ca3af;
+    }
+
+    /* Services Section */
+    #services {
+      background: var(--bg-light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.8rem;
+    }
+
+    @media (max-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .service-card {
+      position: relative;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 1.6rem 1.5rem 1.7rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      overflow: hidden;
+      transition: transform var(--transition-med), box-shadow var(--transition-med),
+        border-color var(--transition-med);
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.06), transparent 55%);
+      opacity: 0;
+      transition: opacity var(--transition-med);
+      pointer-events: none;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16);
+      border-color: rgba(249, 115, 22, 0.5);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      background: radial-gradient(circle at 20% 20%, #facc15, #f97316);
+      display: grid;
+      place-items: center;
+      color: #111827;
+      margin-bottom: 1rem;
+      box-shadow: 0 14px 30px rgba(249, 115, 22, 0.55);
+      font-size: 1.25rem;
+    }
+
+    .service-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-bottom: 0.45rem;
+    }
+
+    .service-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .service-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: #9ca3af;
+    }
+
+    .service-meta span strong {
+      font-weight: 600;
+      color: #4b5563;
+    }
+
+    .service-link {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #f97316;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.8rem;
+    }
+
+    @media (max-width: 992px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .projects-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+    }
+
+    .project-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      cursor: pointer;
+      background: #020617;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
+      transform: translateY(0);
+      transition: transform var(--transition-med), box-shadow var(--transition-med),
+        filter var(--transition-med);
+    }
+
+    .project-card-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: transform 0.9s ease, filter 0.9s ease;
+      filter: grayscale(20%) brightness(0.9);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.9),
+        rgba(15, 23, 42, 0.1)
+      );
+      opacity: 0.6;
+      transition: opacity var(--transition-med);
+    }
+
+    .project-content {
+      position: absolute;
+      bottom: 1.2rem;
+      left: 1.1rem;
+      right: 1.1rem;
+      color: #f9fafb;
+    }
+
+    /**********
+    .project-content a {
+        position: relative;
+        z-index: 2;
+        pointer-events: auto;
+    }
+
+*/
+
+    .project-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(249, 250, 251, 0.12);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-tag-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #facc15;
+    }
+
+    .project-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .project-location {
+      font-size: 0.8rem;
+      color: #e5e7eb;
+      opacity: 0.9;
+    }
+
+    .project-meta {
+      margin-top: 0.6rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: #d1d5db;
+    }
+
+    .project-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .project-meta span i {
+      color: #facc15;
+      font-size: 0.85rem;
+    }
+
+    .project-link {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #f97316;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      font-weight: 600;
+    }
+
+    .project-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 26px 65px rgba(15, 23, 42, 0.5);
+    }
+
+    .project-card:hover img {
+      transform: scale(1.08);
+      filter: grayscale(0%) brightness(1);
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 0.35;
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .about-text h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.6rem;
+      color: var(--primary-dark);
+    }
+
+    .about-text p {
+      font-size: 0.94rem;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .about-highlight {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      margin: 1.4rem 0 1.8rem;
+    }
+
+    .about-highlight-item {
+      min-width: 120px;
+    }
+
+    .about-highlight-number {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .about-highlight-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    @media (max-width: 640px) {
+      .why-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .why-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      background: #f9fafb;
+      font-size: 0.85rem;
+      color: #4b5563;
+    }
+
+    .why-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 20% 20%, #f97316, #facc15);
+      display: grid;
+      place-items: center;
+      color: #111827;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 26px rgba(249, 115, 22, 0.6);
+      flex-shrink: 0;
+    }
+
+    .about-media {
+      position: relative;
+    }
+
+    .about-photo-main {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 26px 60px rgba(15, 23, 42, 0.38);
+      transform: translateY(0);
+      transition: transform var(--transition-med), box-shadow var(--transition-med);
+    }
+
+    .about-photo-main img {
+      height: 320px;
+      width: 100%;
+      object-fit: cover;
+      filter: saturate(1.05);
+    }
+
+    .about-badge {
+      position: absolute;
+      bottom: -14px;
+      left: 14px;
+      right: auto;
+      max-width: 240px;
+      background: #0b1120;
+      border-radius: var(--radius-lg);
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: #e5e7eb;
+      font-size: 0.8rem;
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.8);
+    }
+
+    @media (max-width: 900px) {
+      .about-badge {
+        position: absolute;
+        bottom: -12px;
+        left: 16px;
+      }
+    }
+
+    .about-badge h4 {
+      font-size: 0.88rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .about-badge span {
+      font-size: 0.72rem;
+      color: #9ca3af;
+    }
+
+    /* Contact Section */
+    #contact {
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .contact-form {
+      background: #020617;
+      border-radius: var(--radius-lg);
+      padding: 1.8rem 1.6rem 1.9rem;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      box-shadow: 0 26px 80px rgba(15, 23, 42, 0.9);
+    }
+
+    .contact-form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    @media (max-width: 640px) {
+      .contact-form-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 0.82rem;
+      color: #e5e7eb;
+    }
+
+    .required {
+      color: #f97316;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.7rem 0.8rem;
+      border-radius: 0.7rem;
+      border: 1px solid rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.9);
+      color: #f9fafb;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast),
+        background var(--transition-fast);
+      font-family: inherit;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #6b7280;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #f97316;
+      background: rgba(15, 23, 42, 1);
+      box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.4);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-top: 0.6rem;
+    }
+
+    .form-note {
+      font-size: 0.76rem;
+      color: #9ca3af;
+      max-width: 240px;
+    }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.4rem;
+      border-radius: var(--radius-pill);
+      border: none;
+      background: linear-gradient(120deg, #10b981, #22c55e);
+      color: #022c22;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      cursor: pointer;
+      box-shadow: 0 18px 45px rgba(16, 185, 129, 0.65);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 24px 60px rgba(16, 185, 129, 0.85);
+    }
+
+    .btn-submit i {
+      font-size: 0.9rem;
+    }
+
+    .contact-info {
+      padding-top: 0.3rem;
+    }
+
+    .contact-info h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+      color: #f9fafb;
+    }
+
+    .contact-text {
+      font-size: 0.94rem;
+      color: #9ca3af;
+      margin-bottom: 1.3rem;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 0.8rem;
+      margin-bottom: 1.6rem;
+      font-size: 0.88rem;
+      color: #e5e7eb;
+    }
+
+    .contact-details span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .contact-details i {
+      color: #facc15;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.75rem 1.3rem;
+      border-radius: var(--radius-pill);
+      border: none;
+      cursor: pointer;
+      background: #22c55e;
+      color: #022c22;
+      font-size: 0.86rem;
+      font-weight: 600;
+      box-shadow: 0 18px 45px rgba(22, 163, 74, 0.7);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 24px 60px rgba(22, 163, 74, 0.9);
+    }
+
+    .btn-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      cursor: pointer;
+      background: rgba(15, 23, 42, 0.9);
+      color: #e5e7eb;
+      font-size: 0.86rem;
+      transition: all var(--transition-fast);
+    }
+
+    .btn-email:hover {
+      border-color: #f97316;
+      color: #facc15;
+      background: rgba(15, 23, 42, 1);
+    }
+
+    .map-wrapper {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(55, 65, 81, 0.7);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.8);
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 220px;
+      border: 0;
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      padding: 1.7rem 0 2rem;
+      background: #020617;
+      border-top: 1px solid rgba(31, 41, 55, 1);
+      color: #9ca3af;
+      font-size: 0.8rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #9ca3af;
+      font-size: 0.78rem;
+    }
+
+    .footer-links a:hover {
+      color: #f97316;
+    }
+
+    /* Scroll Animations (fade-in) */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 {
+      transition-delay: 0.1s;
+    }
+    .reveal-delay-2 {
+      transition-delay: 0.2s;
+    }
+    .reveal-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+
+    /* Hide projects beyond the first 3 */
+.projects-grid .project-card:nth-child(n+4) {
+  display: none;
+}
+
+.projects-grid.show-all .project-card {
+  display: block;
+}
+
+.view-more-btn {
+  display: block;
+  margin: 2.5rem auto 0;
+  padding: 0.9rem 1.8rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(120deg, #f97316, #facc15);
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 18px 40px rgba(249, 115, 22, 0.75);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.view-more-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 52px rgba(249, 115, 22, 0.9);
+}
+
+
+.error-message {
+  display: block;
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.35rem;
+  min-height: 1.2rem;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.05);
+}
+
+.form-group input.success,
+.form-group textarea.success {
+  border-color: #22c55e;
+}
+
+.form-group input:focus.error,
+.form-group textarea:focus.error {
+  box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.4);
+}
+
+/* Success message */
+.form-success {
+  display: none;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-success.show {
+  display: block;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header id="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#home" class="nav-logo">
+            <div class="nav-logo-mark">
+                <img src="IMG_5182.jpg" alt="BuildCore Construct logo" />
+            </div>
+            <span><h1>SandCraft</h1>Interiors and Builders</span>
+        </a>
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-cta">
+          <a
+            class="icon-btn"
+            href="https://wa.me/8086146328"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <button class="icon-btn" type="button" aria-label="Copy Email" id="header-email-btn">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+          
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="nav-mobile" id="nav-mobile">
+        <div class="nav-mobile-links">
+          <a href="#home"><span>01</span>Home</a>
+          <a href="#services"><span>02</span>Services</a>
+          <a href="#projects"><span>03</span>Projects</a>
+          <a href="#about"><span>04</span>About</a>
+          <a href="#contact"><span>05</span>Contact</a>
+        </div>
+       
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-kicker reveal">
+          <div class="hero-kicker-icon">
+
+            
+            <div class="nav-logo-mark">
+                <img src="IMG_5182.jpg" alt="BuildCore Construct logo" />
+            </div>
+
+            <!--<i class="fa-solid fa-building"></i>-->
+          </div>
+          <span>SandCraft Interiors and builders</span>
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Building Your <span>Vision</span><br />
+          With Excellence.
+        </h1>
+        <p class="hero-subtitle reveal reveal-delay-2">
+          We are a full-service construction company delivering safe, on-time, and
+          cost-efficient projects across residential, commercial, and interiors
+          —with uncompromising quality and craftsmanship.
+        </p>
+
+       
+          
+
+        <div class="hero-actions reveal reveal-delay-3">
+          
+          <button
+            class="btn-outline"
+            type="button"
+            onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})"
+          >
+            <i class="fa-solid fa-circle-play"></i>
+            View projects
+          </button>
+        </div>
+
+        
+      </div>
+
+      <aside class="hero-badge reveal reveal-delay-2" aria-label="Company stats">
+        <div class="hero-badge-title">
+          <h3>Proven Delivery Record</h3>
+          <div class="hero-badge-chip">On-Time &amp; On-Budget</div>
+        </div>
+        <div class="hero-badge-grid">
+          <div class="hero-badge-item">
+            <span>Years of Experience</span>
+            10+ years
+          </div>
+          <div class="hero-badge-item">
+            <span>Projects Delivered</span>
+            100+ builds
+          </div>
+         
+        </div>
+        
+      </aside>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Our Services</div>
+        <h2 class="section-title">End-to-End Construction Solutions</h2>
+        <p class="section-subtitle">
+          From initial concept and planning to handing over the keys, we manage
+          every stage of your project with precision, transparency, and safety-first
+          execution.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-city"></i>
+          </div>
+          <h3 class="service-title">Commercial Construction</h3>
+          <p class="service-desc">
+            We construct modern commercial spaces—from offices to retail environments—engineered for maximum efficiency, 
+            long-term durability, and standout visual appeal.
+          </p>
+          <div class="service-meta">
+            <span><strong>Scope:</strong> Offices, showrooms</span>
+            <span class="service-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <i class="fa-solid fa-house-chimney"></i>
+          </div>
+          <h3 class="service-title">Residential Projects</h3>
+          <p class="service-desc">
+            Premium villas, apartments, and gated communities, crafted to reflect
+            your lifestyle while meeting strict structural and safety standards.
+          </p>
+          
+          <div class="service-meta">
+            <span><strong>Scope:</strong> Villas, apartments</span>
+            <span class="service-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+
+
+        <article class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-pencil-ruler"></i>
+          </div>
+          <h3 class="service-title">Interiors  &amp; Design</h3>
+          <p class="service-desc">
+            We design sophisticated interiors with premium materials, smart layouts, 
+            and custom details—creating spaces that feel luxurious, comfortable, and uniquely yours.
+
+          </p>
+          <div class="service-meta">
+            <span><strong>Scope:</strong> Modern, vintage</span>
+            <span class="service-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <i class="fa-solid fa-helmet-safety"></i>
+          </div>
+          <h3 class="service-title">Renovation &amp; Fit-Out</h3>
+          <p class="service-desc">
+            Upgrades, expansions, and interior fit-outs that modernize spaces
+            while keeping operations running smoothly where needed.
+          </p>
+          <div class="service-meta">
+            <span><strong>Scope:</strong> Retrofits, interiors</span>
+            <span class="service-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <i class="fa-solid fa-draw-polygon"></i>
+          </div>
+          <h3 class="service-title">Project Management</h3>
+          <p class="service-desc">
+            Detailed planning, scheduling, and site supervision to keep projects
+            within budget, on schedule, and compliant with regulations.
+          </p>
+          <div class="service-meta">
+            <span><strong>Scope:</strong> PMC, QA/QC</span>
+            <span class="service-link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+  <!--project view-->
+  <section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-kicker">Our Work</div>
+      <h2 class="section-title">Completed Projects</h2>
+      <p class="section-subtitle">
+        A snapshot of our residential, commercial, and industrial builds,
+        delivered with meticulous attention to detail and uncompromising quality.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Your first 3 project cards (visible by default) -->
+      <article class="project-card reveal">
+        <!-- ... your first card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/1.jpg"
+              alt="Modern commercial tower project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span> Commercial
+              </div>
+              <h3 class="project-title"></h3>
+              <p class="project-location">Changapodu</p>
+              
+            </div>
+          </div>
+      </article>
+
+      <article class="project-card reveal reveal-delay-1">
+        <!-- ... your second card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/3.jpg"
+              alt="Luxury residential villa project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span> Residential
+              </div>
+              <h3 class="project-title">Mr. Vijayan</h3>
+              <p class="project-location">Vaikom</p>
+              <!--<div class="project-meta">
+                <span><i class="fa-solid fa-ruler-combined"></i> </span>
+                <a class="project-link" href="#magnolia-gallery">
+                    More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>            -->
+            </div>
+          </div>
+      </article>
+
+      <article class="project-card reveal">
+        <!-- ... your third card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/IMG_3917.png"
+              alt="Interior fit-out project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span> Renovation
+              </div>
+              <h3 class="project-title">Mr. Manoj James</h3>
+              <p class="project-location">Alappuzha</p>
+              
+            </div>
+          </div>
+      </article>
+
+      <!-- Cards 4, 5, 6 (hidden by default) -->
+      <article class="project-card reveal">
+        <!-- ... your fourth card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/a.jpg"
+              alt="Interior fit-out project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span>
+              </div>
+              <h3 class="project-title"></h3>
+              <p class="project-location"></p>
+              
+            </div> 
+          </div>
+      </article>
+
+      <article class="project-card reveal">
+        <!-- ... your fifth card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/b.jpg"
+              alt="Interior fit-out project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span>
+              </div>
+              <h3 class="project-title"></h3>
+              <p class="project-location"></p>
+              
+            </div>
+          </div>
+      </article>
+
+      <article class="project-card reveal">
+        <!-- ... your sixth card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/c.jpg"
+              alt="Interior fit-out project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span>
+              </div>
+              <h3 class="project-title"></h3>
+              <p class="project-location"></p>
+              
+            </div>
+          </div>
+      </article>
+
+      <article class="project-card reveal">
+        <!-- ... your 7 card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/d.jpg"
+              alt="Interior fit-out project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span>
+              </div>
+              <h3 class="project-title"></h3>
+              <p class="project-location"></p>
+              
+            </div>
+          </div>
+      </article>
+
+      <article class="project-card reveal">
+        <!-- ... your 8th card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/e.jpg"
+              alt="Interior fit-out project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span>
+              </div>
+              <h3 class="project-title"></h3>
+              <p class="project-location"></p>
+              
+            </div>
+          </div>
+      </article>
+
+      <article class="project-card reveal">
+        <!-- ... your 9th card content ... -->
+         <div class="project-card-image">
+            <img
+              src="images/f.jpg"
+              alt="Interior fit-out project"
+              loading="lazy"
+            />
+            <div class="project-overlay"></div>
+            <div class="project-content">
+              <div class="project-tag">
+                <span class="project-tag-dot"></span>
+              </div>
+              <h3 class="project-title"></h3>
+              <p class="project-location"></p>
+              
+            </div>
+          </div>
+      </article>
+
+    </div>
+
+    <!-- Add this button after the projects-grid closing div -->
+    <button class="view-more-btn" id="view-more-btn">
+      View More Projects
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+  </div>
+</section>
+
+
+                 
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">About Us</div>
+        <h2 class="section-title">A Construction Partner You Can Rely On</h2>
+        <p class="section-subtitle">
+          SandCraft Interiors and Builders brings together seasoned engineering knowledge and meticulous site supervision 
+          to deliver high-quality construction and interior solutions you can trust.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h3>We turn complex projects into predictable outcomes.</h3>
+          <p>
+            For over 10 years, we have been designing and delivering high-value
+            construction projects across residential, commercial, and interiors. Our teams are led by seasoned engineers and certified project
+            managers who understand how to balance time, cost, and quality without
+            compromise.
+          </p>
+          <p>
+            With robust safety protocols, transparent reporting, and proactive risk
+            management, we ensure that every build is delivered to specification,
+            on schedule, and with zero surprises.
+          </p>
+
+          <div class="about-highlight">
+            <div class="about-highlight-item">
+              <div class="about-highlight-number">10+</div>
+              <div class="about-highlight-label">Years in Operation</div>
+            </div>
+            <div class="about-highlight-item">
+              <div class="about-highlight-number">100+</div>
+              <div class="about-highlight-label">Completed Projects</div>
+            </div>
+            
+          </div>
+
+          <h3>Why Choose Us</h3>
+          <div class="why-grid">
+            <div class="why-item">
+              <div class="why-icon">
+                <i class="fa-solid fa-clipboard-check"></i>
+              </div>
+              <div>
+                <strong>Transparent, accountable delivery.</strong>
+                <br />
+                Detailed schedules, progress reports, and single-point contact
+                throughout your project.
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <strong>Safety &amp; compliance first.</strong>
+                <br />
+                Strict adherence to safety codes, local regulations, and quality
+                benchmarks on every site.
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">
+                <i class="fa-solid fa-hourglass-half"></i>
+              </div>
+              <div>
+                <strong>On-time, every time.</strong>
+                <br />
+                Structured planning and sequencing that keeps your project moving
+                without costly delays.
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <div>
+                <strong>Long-term partnerships.</strong>
+                <br />
+                We focus on lasting relationships, not one-off builds—most of our
+                work comes from repeat clients.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="about-media reveal reveal-delay-1">
+          <div class="about-photo-main">
+            <img
+              src="https://images.pexels.com/photos/4394164/pexels-photo-4394164.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Construction engineers reviewing building plans on site"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-badge">
+            <h4>“Zero-compromise quality on every site.”</h4>
+            <span>Lead Project Director</span>
+            <p style="margin-top: 0.5rem; font-size: 0.78rem; color: #9ca3af;">
+              Our integrated teams and proven processes allow us to keep your
+              project controlled, coordinated, and moving forward—no matter the
+              complexity.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-kicker">Contact</div>
+        <h2 class="section-title" style="color: #f9fafb;">
+          Let’s Discuss Your Next Project
+        </h2>
+        <p class="section-subtitle" style="color: #9ca3af;">
+          Share your requirements and our team will get back to you with a tailored
+          proposal, timeline, and cost estimate.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!--<form class="contact-form reveal" id="quote-form" novalidate>
+          <div class="contact-form-row">
+            <div class="form-group">
+              <label for="name">
+                Name <span class="required">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+              <span class="error-message" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">
+                Email <span class="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+              <span class="error-message" id="email-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">
+              Phone <span class="required">*</span>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+91 __________"
+              required
+            />
+            <span class="error-message" id="phone-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">
+              Project Details <span class="required">*</span>
+            </label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us about your project type, location, approximate size, and timeline."
+                required
+            ></textarea>
+            <span class="error-message" id="message-error"></span>
+          </div>
+
+          <div class="form-footer">
+            <button class="btn-submit" type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+                Submit Request
+            </button>
+            <p class="form-note">
+              We typically respond within one business day. Your information is
+              kept strictly confidential.
+            </p>
+          </div>
+        </form>-->
+        <div class="map-wrapper" aria-label="Company location on map">
+            <!-- Optional Google Map embed (replace src with your actual location link) -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.86742385452!2d76.34318647462156!3d9.433025390645344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b089b005b95fae5%3A0xc973de1144beea6a!2sSandCraft%20Interiors%20and%20Builders!5e0!3m2!1sen!2sin!4v1767075956855!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        <aside class="contact-info reveal reveal-delay-1">
+          <h3>Visit, call, or message us anytime.</h3>
+          <p class="contact-text">
+            Whether you’re at concept stage or ready to break ground, we’ll help
+            you clarify your scope, budget, and schedule.
+          </p>
+
+          <div class="contact-details">
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              SNDP-610 building,Punnapra
+            </span>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+              +91 8086146328
+            </span>
+            <span>
+              <i class="fa-solid fa-envelope"></i>
+              sandcraftbuilders@gmail.com
+            </span>
+            <span>
+              <i class="fa-solid fa-clock"></i>
+              Mon – Sat: 9:00 AM – 6:30 PM
+            </span>
+          </div>
+
+          <div class="contact-actions">
+            <a
+              class="btn-whatsapp"
+              href="https://wa.me/8086146328"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Chat on WhatsApp
+            </a>
+            <!--<a class="btn-email" href="mailto:sandcraftbuilders@gmail.com?subject=Project Inquiry&body=Hello, I would like to discuss a project.">
+              <i class="fa-solid fa-envelope-open-text"></i>
+                Send an Email
+            </a>      -->  
+
+            <!--<button class="btn-email" type="button" id="copy-email-btn">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <span id="email-btn-text">Send an Email</span>
+            </button> -->
+          </div>
+
+
+
+
+
+
+          
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> SandCraft Interior and Builders. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+      
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky header + shadow on scroll
+    const header = document.getElementById("site-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 40) {
+        header.classList.add("header--scrolled");
+      } else {
+        header.classList.remove("header--scrolled");
+      }
+    });
+
+    // Mobile navigation toggle
+    const navToggle = document.getElementById("nav-toggle");
+    const navMobile = document.getElementById("nav-mobile");
+
+    navToggle.addEventListener("click", () => {
+      const isOpen = navMobile.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", isOpen);
+      navToggle.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    // Close mobile nav when clicking a link
+    navMobile.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navMobile.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
+    // Simple scroll reveal animation
+    const revealElements = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+    revealElements.forEach((el) => observer.observe(el));
+
+    
+    
+// View More / View Less button functionality
+const viewMoreBtn = document.getElementById('view-more-btn');
+const projectsGrid = document.querySelector('.projects-grid');
+
+if (viewMoreBtn && projectsGrid) {
+  viewMoreBtn.addEventListener('click', () => {
+    const isExpanded = projectsGrid.classList.toggle('show-all');
+    
+    if (isExpanded) {
+      viewMoreBtn.innerHTML = 'View Less <i class="fa-solid fa-chevron-up"></i>';
+    } else {
+      viewMoreBtn.innerHTML = 'View More Projects <i class="fa-solid fa-chevron-down"></i>';
+    }
+  });
+}
+
+// Email address
+const emailAddress = 'sandcraftbuilders@gmail.com';
+
+// Function to copy email to clipboard
+function copyEmailToClipboard(email, buttonElement, textElement, iconElement) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(email).then(() => {
+      // Success feedback
+      if (textElement) {
+        const originalText = textElement.textContent;
+        textElement.textContent = 'Email Copied!';
+        setTimeout(() => {
+          textElement.textContent = originalText;
+        }, 2000);
+      }
+      
+      if (iconElement) {
+        const originalClass = iconElement.className;
+        iconElement.className = 'fa-solid fa-check';
+        setTimeout(() => {
+          iconElement.className = originalClass;
+        }, 2000);
+      }
+      
+      if (buttonElement) {
+        buttonElement.style.background = 'linear-gradient(120deg, #10b981, #22c55e)';
+        buttonElement.style.borderColor = '#22c55e';
+        setTimeout(() => {
+          buttonElement.style.background = '';
+          buttonElement.style.borderColor = '';
+        }, 2000);
+      }
+    }).catch(() => {
+      fallbackCopyEmail(email);
+    });
+  } else {
+    fallbackCopyEmail(email);
+  }
+}
+
+// Fallback for older browsers
+function fallbackCopyEmail(email) {
+  const textarea = document.createElement('textarea');
+  textarea.value = email;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  textarea.select();
+  try {
+    document.execCommand('copy');
+    alert('Email copied: ' + email);
+  } catch (err) {
+    alert('Email: ' + email + '\n\nPlease copy this email address manually.');
+  }
+  document.body.removeChild(textarea);
+}
+
+// Header email button
+const headerEmailBtn = document.getElementById('header-email-btn');
+if (headerEmailBtn) {
+  headerEmailBtn.addEventListener('click', function() {
+    const icon = this.querySelector('i');
+    copyEmailToClipboard(emailAddress, this, null, icon);
+  });
+}
+
+// Contact section email button
+const copyEmailBtn = document.getElementById('copy-email-btn');
+const emailBtnText = document.getElementById('email-btn-text');
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener('click', function() {
+    const icon = this.querySelector('i');
+    copyEmailToClipboard(emailAddress, this, emailBtnText, icon);
+  });
+}
+
+// Form validation functions
+function validateName(name) {
+  if (!name.trim()) {
+    return 'Name is required';
+  }
+  if (name.trim().length < 2) {
+    return 'Name must be at least 2 characters';
+  }
+  return '';
+}
+
+function validateEmail(email) {
+  if (!email.trim()) {
+    return 'Email is required';
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email.trim())) {
+    return 'Please enter a valid email address';
+  }
+  return '';
+}
+
+function validatePhone(phone) {
+  if (!phone.trim()) {
+    return 'Phone number is required';
+  }
+  const cleanPhone = phone.replace(/[\s\-+]/g, '');
+  if (!/^\d{10,15}$/.test(cleanPhone)) {
+    return 'Please enter a valid phone number (10-15 digits)';
+  }
+  return '';
+}
+
+function validateMessage(message) {
+  if (!message.trim()) {
+    return 'Project details are required';
+  }
+  if (message.trim().length < 10) {
+    return 'Please provide more details (at least 10 characters)';
+  }
+  return '';
+}
+
+// Show error function
+function showError(input, errorElement, message) {
+  input.classList.add('error');
+  input.classList.remove('success');
+  errorElement.textContent = message;
+}
+
+// Show success function
+function showSuccess(input, errorElement) {
+  input.classList.remove('error');
+  input.classList.add('success');
+  errorElement.textContent = '';
+}
+
+// Form elements
+const form = document.getElementById('quote-form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const messageInput = document.getElementById('message');
+
+// Real-time validation on blur
+if (nameInput) {
+  nameInput.addEventListener('blur', function() {
+    const error = validateName(this.value);
+    const errorElement = document.getElementById('name-error');
+    if (error) {
+      showError(this, errorElement, error);
+    } else {
+      showSuccess(this, errorElement);
+    }
+  });
+}
+
+if (emailInput) {
+  emailInput.addEventListener('blur', function() {
+    const error = validateEmail(this.value);
+    const errorElement = document.getElementById('email-error');
+    if (error) {
+      showError(this, errorElement, error);
+    } else {
+      showSuccess(this, errorElement);
+    }
+  });
+}
+
+if (phoneInput) {
+  phoneInput.addEventListener('blur', function() {
+    const error = validatePhone(this.value);
+    const errorElement = document.getElementById('phone-error');
+    if (error) {
+      showError(this, errorElement, error);
+    } else {
+      showSuccess(this, errorElement);
+    }
+  });
+}
+
+if (messageInput) {
+  messageInput.addEventListener('blur', function() {
+    const error = validateMessage(this.value);
+    const errorElement = document.getElementById('message-error');
+    if (error) {
+      showError(this, errorElement, error);
+    } else {
+      showSuccess(this, errorElement);
+    }
+  });
+}
+
+// Form submission - Using Google Sheets or simple alert for now
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Validate all fields
+    const nameError = validateName(nameInput.value);
+    const emailError = validateEmail(emailInput.value);
+    const phoneError = validatePhone(phoneInput.value);
+    const messageError = validateMessage(messageInput.value);
+    
+    // Show errors
+    if (nameError) {
+      showError(nameInput, document.getElementById('name-error'), nameError);
+    } else {
+      showSuccess(nameInput, document.getElementById('name-error'));
+    }
+    
+    if (emailError) {
+      showError(emailInput, document.getElementById('email-error'), emailError);
+    } else {
+      showSuccess(emailInput, document.getElementById('email-error'));
+    }
+    
+    if (phoneError) {
+      showError(phoneInput, document.getElementById('phone-error'), phoneError);
+    } else {
+      showSuccess(phoneInput, document.getElementById('phone-error'));
+    }
+    
+    if (messageError) {
+      showError(messageInput, document.getElementById('message-error'), messageError);
+    } else {
+      showSuccess(messageInput, document.getElementById('message-error'));
+    }
+    
+    // If validation fails, stop
+    if (nameError || emailError || phoneError || messageError) {
+      const firstError = form.querySelector('.error');
+      if (firstError) {
+        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        firstError.focus();
+      }
+      return;
+    }
+    
+    // Show loading state
+    const submitBtn = form.querySelector('.btn-submit');
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+    submitBtn.disabled = true;
+    
+    // For now, show success message (you can integrate EmailJS or backend later)
+    setTimeout(() => {
+      const successMsg = document.createElement('div');
+      successMsg.className = 'form-success show';
+      successMsg.innerHTML = '<i class="fa-solid fa-check-circle"></i> Thank you! Your request has been submitted. We will contact you shortly.';
+      form.insertBefore(successMsg, form.firstChild);
+      
+      // Scroll to success message
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      
+      // Reset form
+      form.reset();
+      [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+        input.classList.remove('success', 'error');
+      });
+      document.querySelectorAll('.error-message').forEach(el => {
+        el.textContent = '';
+      });
+      
+      // Reset button
+      submitBtn.innerHTML = originalBtnText;
+      submitBtn.disabled = false;
+      
+      // Remove success message after 5 seconds
+      setTimeout(() => {
+        successMsg.remove();
+      }, 5000);
+    }, 1000);
+  });
+} 
+ 
+// Dynamic year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
+  </script>
+</body>
+
+</html>
